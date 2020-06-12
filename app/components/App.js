@@ -1,11 +1,16 @@
 import React from 'react'
+import '../styles/App.css'
+
+import Header from './Header'
+import MainContent from './MainContent'
+import Footer from './Footer'
 
 const App = () => {
   return (
     <div>
-      <header>Header</header>
-      <main>Main</main>
-      <footer>Footer</footer>
+      <Header id='header'>Header</Header>
+      <MainContent>Main</MainContent>
+      <Footer id='footer'>Footer</Footer>
     </div>
   )
 }
