@@ -1,11 +1,13 @@
-.nav-link {
+.nav-button {
   text-decoration: none;
-  color: white;
+  color: blue;
+  background-color: rgb(166, 165, 165, .7); 
   font-weight: 500;
   font-size: x-large;
+  text-align: left;
 }
 
-.nav-link:hover {
+.nav-button:hover {
   text-decoration: none;
   color: blue;
   background-color: white;
@@ -18,4 +20,11 @@
 .nav-background:hover {
   background-color: white;
   border-bottom: 1px solid black;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column; 
+  background-color: rgb(166, 165, 165, .7); 
+  padding-top: 2rem;
 }

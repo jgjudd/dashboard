@@ -24,11 +24,9 @@ const SideMenu = () => {
     context.setCurrentScreen(screen)
   }
   return (
-    <aside style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'grey', minHeight: '45rem' }}>
+    <aside className='side-bar'>
       {menuOptions.map( (i) =>
-        <span className='nav-background' key={i}>
-          <a className='nav-link' onClick={() => handleClick(i)}>{i}</a>
-        </span>
+        <button className='nav-button' key={i} onClick={() => handleClick(i)}>{i}</button>
       )}
     </aside>
   )

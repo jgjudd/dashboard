@@ -1,0 +1,6 @@
+.content {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  min-height: 44rem;
+}

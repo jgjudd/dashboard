@@ -1,0 +1,6 @@
+ .grid {
+  display: grid;
+  grid-template-rows: 6% auto;
+  width: 100vw;
+  height: 100vh;
+}
