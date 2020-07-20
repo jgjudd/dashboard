@@ -5,10 +5,10 @@ import { AppContext } from '../context/AppContext'
 const getMenuOptions = () => {
   return [
     'Dashboard',
+    'Cases',
     'Calendar',
     'Tasks',
     'Clients',
-    'Cases',
     'Quotes',
     'Invoices',
     'Payments',
@@ -18,10 +18,11 @@ const getMenuOptions = () => {
 
 const SideMenu = () => {
   const context = useContext(AppContext)
+  console.log(context)
   const menuOptions = getMenuOptions()
   const handleClick = (screen) => {
     screen = screen.toLowerCase()
-    context.setCurrentScreen(screen)
+    context.setCurrentScreen(screen) 
   }
   return (
     <aside className='side-bar'>

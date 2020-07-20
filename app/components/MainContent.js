@@ -4,6 +4,7 @@ import { AppContext } from '../context/AppContext'
 import Dashboard from './screens/Dashboard'
 import Calendar from './screens/Calendar'
 import Tasks from './screens/Tasks'
+import Cases from './screens/Cases'
 
 const MainContent = () => {
   const context = useContext(AppContext)
@@ -11,14 +12,14 @@ const MainContent = () => {
   switch (context.currentScreen) {
     case 'dashboard': 
       return <Dashboard />
+    case 'cases': 
+      return <Cases />
     case 'calendar': 
       return <Calendar />
     case 'tasks': 
       return <Tasks />
     case 'clients': 
       return <main>Clients</main>
-    case 'cases': 
-      return <main>Cases</main>
     case 'quotes': 
       return <main>Quotes</main>
     case 'invoices': 

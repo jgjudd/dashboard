@@ -5,22 +5,35 @@
 }
 
 .monitors {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.case-table { 
-  border: 1px solid black;
+.case-list {
+  width: 100%;
+}
+.case { 
+  background-color: teal;
+  padding: 1rem;
+  margin: 0rem 1rem 1rem 1rem;
 }
 
 .monitor1 {
+  height: 5rem;
+  width: 20%;
   background-color: green;
+  margin-bottom: 3rem;
 }
 
 .monitor2 {
+  height: 5rem;
+  width: 20%;
   background-color: yellow;
 }
 
 .monitor3 {
+  height: 5rem;
+  width: 20%;
   background-color: red;
 }
